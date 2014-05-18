@@ -43,10 +43,11 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * [ ] Add support for custom titles for Plugin/Theme authors ala 'Official Rep'
 * [ ] Add a 'firehose' view, all topics and all replies sort by date/time created
 * [ ] Do not 'bump' - Can we add a check for the content that if it is eg less than 3 words and contains bump? and/of in form-reply check if the current user was the last user reply and put up a notice outlining the bump rules.
-
+* [ ] Having the option to add an "mod eyes only" note to the account is something that's been on the wish list since... forever.
 * [ ] Template notice after subscribing to a topic or forum eg. 'You are now subscribed to this topic - unsubscribe or view your subscriptions'
 * [x] Allow topics to be stuck to individual forums
 * [ ] Add ability to automatically delete bozo's users posts (topics and replies)
+* [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a bozo on forums, ideas, plugins, themes i.e. Any of the sites in the multisite netowrk
 
 ## Decisions
 
