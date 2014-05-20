@@ -77,6 +77,5 @@ $(document).ready(function() {
 });
 })(jQuery);
 </script>
-<?php wp_footer(); ?>
 </body>
 </html>
