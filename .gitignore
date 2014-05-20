@@ -15,3 +15,9 @@ twentyfourteen/
 twentythirteen/
 twentytwelve/
 index.php
+
+# Windows crap
+Thumbs.db
+
+# Mac crap
+.DS_Store
