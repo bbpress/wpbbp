@@ -2,23 +2,33 @@
 
 Customized bbPress templates and CSS for WordPress Support Forums
 
+## Setting up your WordPress development environment
+
+* Create a local install (MAMP/XAMPP/VVV) with the latest WordPress version
+* Delete the Twenty Twelve, Thirteen and Fourteen themes from `/wp-content/themes`
+* Clone the repo `git clone https://github.com/ntwb/bbPress-GSoc2014.git` into `/wp-content/themes`
+* Open `wp-config.php` and just before `/* That's all, stop editing! Happy blogging. */` add:
+ * `define( 'WPORGPATH', __DIR__ . '/wp-content/themes/' );`
+* Dashboard -> Appearance -> Themes -> Activate the `WPBBP` theme
+* Dashboard -> Settings -> Permalink  -> Change the permalinks to 'Post name' (`/%postname%/`)
+
 ## bbPress 2.x Configuration
 
-* Forum Root Slug -> Forum Root set to `support` <- Must be to match current WP setup
-*
-* Topics & Replies set to 3 per page to invoke pagination
-* Topics & Replies RSS set to 3 per page invoke pagination
-* Define WPORGPATH EG. `define( 'WPORGPATH', dirname( __DIR__ ) . '/wp-content/themes/wporg-support/' );`
+* Checkout the bbPress SVN repo into `/wp-content/plugins`
+* Install and build bbPress from a terminal/command prompt `npm install` and `grunt build`
+ * Full details in the [README.md](https://github.com/ntwb/bbPress/blob/master/README.md)
+* Activate the bbPress plugin
+* Dashboard -> Settings -> Forums -> Forum Root Slug -> Forum Root set to `support` <- `wordpress.org/support`
+* Dashboard -> Settings -> Forums -> Topics & Replies set to 3 per page to invoke pagination
+* Dashboard -> Settings -> Forums -> Topics & Replies RSS set to 3 per page invoke pagination
+* Dashboard -> Tools -> Import -> Install the `WordPress` importer and `Activate Plugin & Run Importer`
+* Select the `/wp-content/themes/wpbb.wxr` file click `Upload file and import` (assign posts to an existing admin user)
+* Dashboard -> Pages -> Edit the 'Forums' page and select the page template `bbPress - Support (Index)` and save the page
+* Dashboard -> Settings -> Reading  -> Select a 'Static Page' for the 'Front Page' and select `Forums`
 
 ## bbPress 1.x Configuration
 
 * Original bbPress 1.x theme templates `/bbpress-1x-dotorg-theme` (Supplied by @nacin)
-
-## Sample Data
-
-* Sample data is contained within `wpbb.wxr`
-** WordPress page: Title `Forums`, Slug `support` and content per `http://wordpress.org/support/`
-** bbPress Forums per forum list at `http://wordpress.org/support/`
 
 ## Tasks
 
@@ -29,7 +39,7 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * [ ] Add bbPress Views `plugin-reviews`, `plugin`, `theme-reviews` and `theme`
 * [ ] Add legacy `header.php` and `footer.php` to repo
 * [ ] Test WPORGPATH Constant (header.php, footer.php etc)
-* [ ] Add bozo bbPress #459
+
 * [ ] Add `resolved/not resolved/not a support question` support bbPress #1720
 * [ ] Add support for 'moderator' only posted forum see http://wordpress.org/support/forum/wp-advanced
 * [ ] Add support for drop down form to add WordPress version to topic
@@ -46,8 +56,7 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * [ ] Having the option to add an "mod eyes only" note to the account is something that's been on the wish list since... forever.
 * [ ] Template notice after subscribing to a topic or forum eg. 'You are now subscribed to this topic - unsubscribe or view your subscriptions'
 * [x] Allow topics to be stuck to individual forums
-* [ ] Add ability to automatically delete bozo's users posts (topics and replies)
-* [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a bozo on forums, ideas, plugins, themes i.e. Any of the sites in the multisite netowrk
+
 
 ## Decisions
 
@@ -55,3 +64,9 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * [x] Depreciated `untagged` view http://wordpress.org/support/view/untagged
 * [ ] Single Forum and Single Topic Templates Notices (at the top of the page)
 * [ ] Should bbPress' own search and search form be used and if so where?
+
+## WordPress Support Forums Moderator Wish List
+* [ ] Add bozo bbPress [#459](https://bbpress.trac.wordpress.org/ticket/459)
+* [ ] Add ability to automatically delete bozo's users posts (topics and replies)
+* [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a bozo on forums, ideas, plugins, themes i.e. Any of the sites in the multisite network
+* [ ] Per forum views, eg. 'no replies' or 'Not Resolved' for each forum
