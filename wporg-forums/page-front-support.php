@@ -30,11 +30,10 @@ get_header(); ?>
 			</ul>
 			<h3><?php _e('Search the Support Forums', 'wporg'); ?></h3>
 			<p><?php _e('Enter a few words that describe the problem you&rsquo;re having.', 'wporg'); ?></p>
-			<form role="search" method="get" id="bbp-search-form" action="<?php bbp_search_url(); ?>">
-				<label class="screen-reader-text hidden" for="bbp_search"><?php _e( 'Search for:', 'bbpress' ); ?></label>
-				<input type="hidden" name="action" value="bbp-search-request" />
-				<input class="text" type="text" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" name="bbp_search" id="forumsearchbox" />
-				<input class="button" type="submit" id="bbp_search_submit" value="<?php esc_attr_e( 'Search', 'bbpress' ); ?>" />
+			<form id="forumsearch" method="get" action="<?php bbp_search_url(); ?>">
+				<input name="search" class="text" id="forumsearchbox" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" type="text">
+				<input id="go" name="go" class="button" value="<?php esc_attr_e( 'Search', 'bbpress' ); ?>" type="submit">
+				<input value="1" name="forums" type="hidden">
 			</form>
 			<h3><?php _e('Hot Topics', 'wporg'); ?></h3>
 			<p class="frontpageheatmap">
@@ -74,11 +73,23 @@ get_header(); ?>
 			</table><!-- #forumlist -->
 			<div id="viewdiv">
 				<ul id="views">
-					<?php foreach ( array_keys( bbp_get_views() ) as $view ) : ?>
+
+					<?php
+
+					$view_iterator = 0;
+					$topic_views   = array_keys( array_reverse( bbp_get_views() ) );
+					$view_count    = count( $topic_views );
+
+					foreach ( $topic_views as $view ) : $view_iterator++; ?>
 
 						<li class="view"><a href="<?php bbp_view_url( $view ); ?>"><?php bbp_view_title( $view ); ?></a></li>
 
-					<?php endforeach; ?>
+						<?php if ( $view_iterator < $view_count ) : ?>|<?php endif; ?>
+
+					<?php endforeach;
+
+					// Unset variables
+					unset( $view_count, $topic_views ); ?>
 
 				</ul>
 			</div><!-- #viewdiv -->
@@ -89,4 +100,4 @@ get_header(); ?>
 	</div><!-- #wrapper -->
 </div><!-- #pagebody -->
 
-<?php get_footer(); ?>
+<?php get_footer();
