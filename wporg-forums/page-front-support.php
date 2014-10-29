@@ -22,17 +22,17 @@ get_header(); ?>
 			<h3><?php _e('Getting Started Resources', 'wporg'); ?></h3>
 			<p><?php _e('If you need help getting started with WordPress, try these articles.', 'wporg'); ?></p>
 			<ul>
-				<li><?php _e('<a href="http://codex.wordpress.org/Forum_Welcome">Welcome to the WordPress Support Forum</a>', 'wporg'); ?></li>
-				<li><?php _e('<a href="http://codex.wordpress.org/New_To_WordPress_-_Where_to_Start">New to WordPress &mdash; Where to Start</a>', 'wporg'); ?></li>
-				<li><?php _e('<a href="http://codex.wordpress.org/FAQ_Installation">Frequently Asked Questions about Installing WordPress</a>', 'wporg'); ?></li>
-				<li><?php _e('<a href="http://codex.wordpress.org/First_Steps_With_WordPress">First Steps with WordPress</a>', 'wporg'); ?></li>
-				<li><?php _e('<a href="http://codex.wordpress.org/Writing_Posts">Writing Posts</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//codex.wordpress.org/Forum_Welcome">Welcome to the WordPress Support Forum</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//codex.wordpress.org/New_To_WordPress_-_Where_to_Start">New to WordPress &mdash; Where to Start</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//codex.wordpress.org/FAQ_Installation">Frequently Asked Questions about Installing WordPress</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//codex.wordpress.org/First_Steps_With_WordPress">First Steps with WordPress</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//codex.wordpress.org/Writing_Posts">Writing Posts</a>', 'wporg'); ?></li>
 			</ul>
 			<h3><?php _e('Search the Support Forums', 'wporg'); ?></h3>
 			<p><?php _e('Enter a few words that describe the problem you&rsquo;re having.', 'wporg'); ?></p>
 			<form id="forumsearch" method="get" action="<?php bbp_search_url(); ?>">
 				<input name="search" class="text" id="forumsearchbox" value="<?php echo esc_attr( bbp_get_search_terms() ); ?>" type="text">
-				<input id="go" name="go" class="button" value="<?php esc_attr_e( 'Search', 'bbpress' ); ?>" type="submit">
+				<input id="go" name="go" class="button" value="<?php esc_attr_e( 'Search', 'wporg' ); ?>" type="submit">
 				<input value="1" name="forums" type="hidden">
 			</form>
 			<h3><?php _e('Hot Topics', 'wporg'); ?></h3>
