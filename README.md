@@ -22,7 +22,7 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * Dashboard -> Settings -> Forums -> Topics & Replies set to 3 per page to invoke pagination
 * Dashboard -> Settings -> Forums -> Topics & Replies RSS set to 3 per page invoke pagination
 * Dashboard -> Tools -> Import -> Install the `WordPress` importer and `Activate Plugin & Run Importer`
-* Select the `/wp-content/themes/wpbb.wxr` file click `Upload file and import` (assign posts to an existing admin user)
+* Select the `/wp-content/themes/wpbbp.wxr` file click `Upload file and import` (assign posts to an existing admin user)
 * Dashboard -> Pages -> Edit the 'Forums' page and select the page template `bbPress - Support (Index)` and save the page
 * Dashboard -> Settings -> Reading  -> Select a 'Static Page' for the 'Front Page' and select `Forums`
 
@@ -66,7 +66,17 @@ Customized bbPress templates and CSS for WordPress Support Forums
 * [ ] Should bbPress' own search and search form be used and if so where?
 
 ## WordPress Support Forums Moderator Wish List
+* [ ] Tools for WordPress dot org forum moderators https://github.com/keesiemeijer/WordPress-moderator-tools
 * [ ] Add bozo bbPress [#459](https://bbpress.trac.wordpress.org/ticket/459)
 * [ ] Add ability to automatically delete bozo's users posts (topics and replies)
 * [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a bozo on forums, ideas, plugins, themes i.e. Any of the sites in the multisite network
 * [ ] Per forum views, eg. 'no replies' or 'Not Resolved' for each forum
+* [ ] Create a view of 'no replies' and 'open' (i.e. not closed)
+* [ ] Add revisions to user profile edits
+* [ ] Allow moderators to edit users profiles
+* [ ] Blacklist support ala bozo'ing accounts e.g an auto-delete-post blacklist for really lame keywords (like 8grid)
+* [ ] Recent activity e.g http://www.stoerke.be/recentforumactivity/?profile=netweb&pages=2
+
+## Make Support Forums Tickets
+https://meta.trac.wordpress.org/query?status=accepted&status=assigned&status=new&status=reopened&status=reviewing&component=Support+Forums&col=id&col=summary&col=status&col=owner&col=type&col=priority&col=component&order=priority
+
