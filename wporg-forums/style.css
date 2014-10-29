@@ -1,19 +1,21 @@
-/*
-Theme Name: WPBBP
-Theme URI: http://wordpress.org/
-Author: The WordPress & bbPress teams
-Author URI: http://wordpress.org/
-Description: A theme for bbPress v2.x Support Forums on wordpress.org sites
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: WordPress, bbPress, Support, Forums
-Text Domain: wpbbp
-Domain Path: /languages/
+/**
+ * Theme Name: WPBBP
+ * Theme URI: http://wordpress.org/
+ * Author: The WordPress & bbPress teams
+ * Author URI: http://wordpress.org/
+ * Description: A theme for bbPress v2.x Support Forums on wordpress.org sites
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: WordPress, bbPress, Support, Forums
+ * Text Domain: wpbbp
+ * Domain Path: /languages/
+ */
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+/**
+ * This theme, like WordPress, is licensed under the GPL.
+ * Use it to make something cool, have fun, and share what you've learned with others.
+ */
 
 html,
 body {
