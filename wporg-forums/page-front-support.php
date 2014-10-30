@@ -27,6 +27,7 @@ get_header(); ?>
 				<li><?php _e('<a href="//codex.wordpress.org/FAQ_Installation">Frequently Asked Questions about Installing WordPress</a>', 'wporg'); ?></li>
 				<li><?php _e('<a href="//codex.wordpress.org/First_Steps_With_WordPress">First Steps with WordPress</a>', 'wporg'); ?></li>
 				<li><?php _e('<a href="//codex.wordpress.org/Writing_Posts">Writing Posts</a>', 'wporg'); ?></li>
+				<li><?php _e('<a href="//make.wordpress.org/support/handbook/">Support Handbook</a>', 'wporg'); ?></li>
 			</ul>
 			<h3><?php _e('Search the Support Forums', 'wporg'); ?></h3>
 			<p><?php _e('Enter a few words that describe the problem you&rsquo;re having.', 'wporg'); ?></p>

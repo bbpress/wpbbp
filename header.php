@@ -8,16 +8,17 @@
 <meta name="google-site-verification" content="7VWES_-rcHBcmaQis9mSYamPfNwE03f4vyTj4pfuAw0" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WordPress</title>
+<meta name="referrer" content="always">
 <link href="//s.w.org/wp-includes/css/dashicons.css?20140409" rel="stylesheet" type="text/css" />
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="//s.w.org/style/wp4.css?13" />
+<link rel="stylesheet" href="//s.w.org/style/wp4.css?16" />
 <link rel="stylesheet" href="//s.w.org/style/forum-wp4.css?13" />
 <link rel="stylesheet" href="//s.w.org/style/forum-wp4.css?13" />
 <link rel="stylesheet" href="//bbpress.org/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=20140613a" type="text/css" media="screen">
 <link rel="stylesheet" href="//bbpress.org/wp-content/themes/bb-base/style.css?ver=20140613a" type="text/css" media="screen">
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 <link media="only screen and (max-device-width: 480px)" href="//s.w.org/style/iphone.css?1" type="text/css" rel="stylesheet" />
-<link rel="shortcut icon" href="//s.w.org/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="//s.w.org/favicon.ico?2" type="image/x-icon" />
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -39,7 +40,7 @@ function recordOutboundLink(link, category, action) {
 @import url("//s.w.org/style/ie.css?1");
 </style>
 <![endif]-->
-<script type="text/javascript" src="//s.w.org/wp-includes/js/jquery/jquery.js?v=1.10.2"></script>
+<script type="text/javascript" src="//s.w.org/wp-includes/js/jquery/jquery.js?v=1.11.1"></script>
 <script>document.cookie='devicePixelRatio='+((window.devicePixelRatio === undefined) ? 1 : window.devicePixelRatio)+'; path=/';</script>
 <script type="text/javascript">
 var toggleMenu = function(){
@@ -82,4 +83,4 @@ var toggleMenu = function(){
         <span class="download-ready">Ready to get started?</span><a class="button download-button" href="//wordpress.org/download/" title="Get it. Got it? Good.">Download WordPress</a>
     </div>
 </div>
-	
+

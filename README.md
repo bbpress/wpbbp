@@ -30,6 +30,14 @@ Customized bbPress templates and CSS for WordPress Support Forums
 
 * Original bbPress 1.x theme templates `/bbpress-1x-dotorg-theme` (Supplied by @nacin)
 
+## WordPress.org source files reference
+* CSS Assets https://meta.trac.wordpress.org/browser/sites/trunk/wordpress.org/public_html/style
+* WordPress.org header https://wordpress.org/header.php == [/header.php](https://github.com/ntwb/bbPress-GSoc2014/blob/master/header.php)
+* WordPress.org footer https://wordpress.org/footer.php == [footer.php](https://github.com/ntwb/bbPress-GSoc2014/blob/master/footer.php)
+
+Note: Ensure `<link rel="stylesheet" href="//s.w.org/style/forum-wp4.css?13" />` is not removed in `header.php`
+ToDo: See `wp_enqueue_styles in` `/wporg-forums/functions.php`
+
 ## Tasks
 
 * [ ] Test WP\_INTERNATIONAL\_FORUMS Constant
