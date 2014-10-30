@@ -12,6 +12,10 @@
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//s.w.org/style/wp4.css?13" />
 <link rel="stylesheet" href="//s.w.org/style/forum-wp4.css?13" />
+<link rel="stylesheet" href="//s.w.org/style/forum-wp4.css?13" />
+<link rel="stylesheet" href="//bbpress.org/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=20140613a" type="text/css" media="screen">
+<link rel="stylesheet" href="//bbpress.org/wp-content/themes/bb-base/style.css?ver=20140613a" type="text/css" media="screen">
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
 <link media="only screen and (max-device-width: 480px)" href="//s.w.org/style/iphone.css?1" type="text/css" rel="stylesheet" />
 <link rel="shortcut icon" href="//s.w.org/favicon.ico" type="image/x-icon" />
 
