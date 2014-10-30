@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Fooooo
+ * Template Name: bbPress - Support (Index)
  *
  * @package bbPress
  * @subpackage Theme
@@ -42,9 +42,7 @@ get_header(); ?>
 		</div><!-- #forum-welcome -->
 		<div class="col-6">
 
-			<div id="bbpress-forums">
-				<?php bbp_get_template_part( 'loop', 'forums' ); ?>
-			</div>
+			<?php bbp_get_template_part( 'content', 'archive-forum' ); ?>
 
 			<div id="viewdiv">
 				<ul id="views">
