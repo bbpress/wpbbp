@@ -40,19 +40,29 @@ ToDo: See `wp_enqueue_styles in` `/wporg-forums/functions.php`
 
 ## Tasks
 
-* [ ] Test WP\_INTERNATIONAL\_FORUMS Constant
-* [ ] Test INTL_FORUMS_LOGIN Constant
+### Environment
+* [ ] Test `WP_INTERNATIONAL_FORUMS` Constant
+* [ ] Test `INTL_FORUMS_LOGIN` Constant
+* [ ] Test `WPORGPATH` Constant (header.php, footer.php etc)
+
+### bbPress Views
 * [ ] Add bbPress View `support-forum-no`
 * [x] Add bbPress View `modlook`
 * [ ] Add bbPress Views `plugin-reviews`, `plugin`, `theme-reviews` and `theme`
-* [ ] Add legacy `header.php` and `footer.php` to repo
-* [ ] Test WPORGPATH Constant (header.php, footer.php etc)
+* [ ] Per forum views, eg. 'no replies' or 'Not Resolved' for each forum
+* [ ] Create a view of 'no replies' and 'open' (i.e. not closed)
 
-* [ ] Add `resolved/not resolved/not a support question` support bbPress #1720
-* [ ] Add support for 'moderator' only posted forum see http://wordpress.org/support/forum/wp-advanced
-* [ ] Add support for drop down form to add WordPress version to topic
+### bbPress Moderation
+* [ ] Add `resolved/not resolved/not a support question` support [bbPress #1720](https://bbpress.trac.wordpress.org/ticket/1720)
+
+### bbPress Moderator Tools
+* [ ] Tools for WordPress dot org forum moderators https://github.com/keesiemeijer/WordPress-moderator-tools
+* [ ] Recent activity e.g http://www.stoerke.be/recentforumactivity/?profile=netweb&pages=2
+
+
+* [ ] Add support for drop down form to add WordPress version to topic (see 1.x theme `version_dropdown()`)
 * [ ] Add 'Mod Watch' see http://codex.wordpress.org/Forum_Welcome#Being_.27Mod_Watched.27_or_Banned
-* [ ] Fix/Redo/Update text_domain strings
+
 * [ ] `Hacks` forum is a sub forum of `Plugins and Hacks`
 * [x] Added `bbp_forum_subscription_link` with RSS link to 'content-single-forum.php' template
 * [ ] Adding tags eg. 'modlook' etc, can anyone add a new tag?
@@ -65,25 +75,24 @@ ToDo: See `wp_enqueue_styles in` `/wporg-forums/functions.php`
 * [ ] Template notice after subscribing to a topic or forum eg. 'You are now subscribed to this topic - unsubscribe or view your subscriptions'
 * [x] Allow topics to be stuck to individual forums
 
+### bbPress B-Tag
+* [ ] Add b-tag bbPress [bbPress #459](https://bbpress.trac.wordpress.org/ticket/459)
+* [ ] Add ability to automatically delete b-tagged users posts (topics and replies)
+* [ ] Blacklist support aka b-tag'ing accounts e.g an auto-delete-post blacklist for really lame keywords (like 8grid)
+* [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a b-tag on forums, ideas, plugins, themes i.e. Any of the sites in the multisite network
+
+### bbPress Users
+* [ ] Add revisions to user profile edits
+* [ ] Allow moderators to edit users profiles
+
+### Misc
+* [ ] Fix/Redo/Update/Verify text_domain strings
 
 ## Decisions
 
 * [ ] Who should be able to subscribe to entire forums? Everyone or Moderators only? (excluding plugin/theme authors)
-* [x] Depreciated `untagged` view http://wordpress.org/support/view/untagged
 * [ ] Single Forum and Single Topic Templates Notices (at the top of the page)
-* [ ] Should bbPress' own search and search form be used and if so where?
-
-## WordPress Support Forums Moderator Wish List
-* [ ] Tools for WordPress dot org forum moderators https://github.com/keesiemeijer/WordPress-moderator-tools
-* [ ] Add bozo bbPress [#459](https://bbpress.trac.wordpress.org/ticket/459)
-* [ ] Add ability to automatically delete bozo's users posts (topics and replies)
-* [ ] Ipstenu's 'button of power' <- Hitting that button on a user will mark the user as a bozo on forums, ideas, plugins, themes i.e. Any of the sites in the multisite network
-* [ ] Per forum views, eg. 'no replies' or 'Not Resolved' for each forum
-* [ ] Create a view of 'no replies' and 'open' (i.e. not closed)
-* [ ] Add revisions to user profile edits
-* [ ] Allow moderators to edit users profiles
-* [ ] Blacklist support ala bozo'ing accounts e.g an auto-delete-post blacklist for really lame keywords (like 8grid)
-* [ ] Recent activity e.g http://www.stoerke.be/recentforumactivity/?profile=netweb&pages=2
+* [x] Should bbPress' own search and search form be used and if so where?
 
 ## Make Support Forums Tickets
 https://meta.trac.wordpress.org/query?status=accepted&status=assigned&status=new&status=reopened&status=reviewing&component=Support+Forums&col=id&col=summary&col=status&col=owner&col=type&col=priority&col=component&order=priority
